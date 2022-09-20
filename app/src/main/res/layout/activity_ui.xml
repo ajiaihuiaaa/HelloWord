@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".UiActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="30dp">
+        <!--    ScrollView里面只能有一个控件，所以用一个layout控件包裹起来-->
+        <!--    所有的控件都是继承自View-->
+        <!--    一般控件单位用dp，文字的单位用sp-->
+        <!--    padding:控件内部间隔-->
+        <!--    margin:控件外部间隔-->
+        <!--    当控件使用match_parent时，它只能占用剩下的所有空间,而不是和父类一样宽-->
+        <!--    gravity:改变控件内部控件的位置-->
+        <!--    设置weight时，为啥要设置0dp？因为weight是将父类剩下的控件进行权重分配-->
+        <!--    所以如果设置的是50dp，那么父类要先减去它占的50dp，剩下的再平分-->
+        <LinearLayout
+            android:id="@+id/layout01"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="20dp"
+            android:background="#000000"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FF0033" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="#0066FF">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="#000000" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="#ff0033" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="#55aa99" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Button"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btn_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="text view"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Edit Text"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/button_radio_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Radio Button"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/button_check_box"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Check Box"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/button_image_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Image View"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/button_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="List View"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/button_grid_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Grid View"
+            android:textAllCaps="false" />
+
+        <!--            水平滑动-->
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="200dp"
+                    android:layout_height="300dp"
+                    android:text="Test" />
+
+                <Button
+                    android:layout_width="200dp"
+                    android:layout_height="300dp"
+                    android:text="Test" />
+
+                <Button
+                    android:layout_width="200dp"
+                    android:layout_height="300dp"
+                    android:text="Test" />
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <Button
+            android:id="@+id/button_recycle_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Recycle View"
+            android:textAllCaps="false" />
+        <Button
+            android:id="@+id/btn_webview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="web view"
+            android:gravity="center"/>
+
+        <Button
+            android:id="@+id/btn_toast"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="toast activity"
+            android:textAllCaps="true"
+            android:gravity="center"/>
+
+        <Button
+            android:id="@+id/btn_alert_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="alert dialog"
+            android:textAllCaps="true"
+            android:gravity="center"/>
+    </LinearLayout>
+</ScrollView>

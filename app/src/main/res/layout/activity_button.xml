@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp">
+
+    <Button
+        android:id="@+id/button01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="按钮1"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:background="#FF0000"/>
+
+<!--带有圆角的按钮框-->
+    <Button
+        android:id="@+id/button02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="按钮2"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/bg_btn2"
+        android:layout_below="@+id/button01"
+        android:layout_marginTop="10dp"/>
+
+    <!--带有圆角，只有边框的按钮-->
+    <Button
+        android:id="@+id/button03"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="按钮3"
+        android:textSize="20sp"
+        android:textColor="#FF9900"
+        android:background="@drawable/bg_btn3"
+        android:layout_below="@+id/button02"
+        android:layout_marginTop="10dp"/>
+
+    <!--点一下按钮时有不同的效果-->
+    <Button
+        android:id="@+id/button04"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="按钮4"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/bg_btn4"
+        android:layout_below="@+id/button03"
+        android:layout_marginTop="10dp"
+        android:onClick="showToast"/>
+
+    <TextView
+        android:id="@+id/textview08"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="按钮5"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/bg_btn4"
+        android:layout_below="@+id/button04"
+        android:layout_marginTop="10dp"/>
+
+
+
+
+</RelativeLayout>

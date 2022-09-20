@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+    <TextView
+        android:id="@+id/textView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv01"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        />
+<!--显示不下，使用....-->
+    <TextView
+        android:id="@+id/textView02"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="@string/tv01"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:layout_marginTop="20dp"
+        />
+<!--文字+icon-->
+    <TextView
+        android:id="@+id/textView03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="筛选"
+        android:drawableRight="@drawable/hot"
+        android:drawablePadding="20dp"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:layout_marginTop="20dp"
+        />
+<!--中划线布局里无法实现，得去java代码中实现-->
+    <TextView
+        android:id="@+id/textView04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="text view"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:layout_marginTop="20dp"
+        />
+    <!--下划线:java代码中实现-->
+    <TextView
+        android:id="@+id/textView05"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="text view"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:layout_marginTop="20dp"
+        />
+    <!--下划线:java代码中通过html实现-->
+    <TextView
+        android:id="@+id/textView06"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="text view"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:layout_marginTop="20dp"
+        />
+    <!--跑马灯-->
+    <TextView
+        android:id="@+id/textView07"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="text view text view text view text view text view"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:layout_marginTop="20dp"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        />
+
+
+
+
+
+
+
+
+
+</LinearLayout>

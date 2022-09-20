@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <Button
+        android:id="@+id/btn_alert_dialog1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Alert Dialog"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/btn_bind_fun"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bind"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/btn_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="spinner"/>
+
+    <Button
+        android:id="@+id/btn_progress_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="progressbar"/>
+
+    <Button
+        android:id="@+id/btn_custom_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="customdialog"/>
+
+    <Button
+        android:id="@+id/btn_popupwindow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="popupwindow"/>
+
+    <Button
+        android:id="@+id/btn_life_cycle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="life cycle of the activity"/>
+
+    <Button
+        android:id="@+id/btn_jump"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="jump"/>
+
+    <Button
+        android:id="@+id/btn_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="fragment"/>
+
+    <Button
+        android:id="@+id/btn_event"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="event"/>
+
+    <Button
+        android:id="@+id/btn_handler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="handler"/>
+
+
+</LinearLayout>
