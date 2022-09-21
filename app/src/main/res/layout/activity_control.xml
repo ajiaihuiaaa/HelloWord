@@ -75,5 +75,17 @@
         android:layout_height="wrap_content"
         android:text="handler"/>
 
+    <Button
+        android:id="@+id/btn_broadcast"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="broadcast"/>
+
+    <Button
+        android:id="@+id/btn_broadcast2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="broadcast2"/>
+
 
 </LinearLayout>

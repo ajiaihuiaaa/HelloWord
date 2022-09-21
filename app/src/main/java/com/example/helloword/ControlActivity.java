@@ -8,6 +8,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.helloword.broadcast.BroadActivity;
+import com.example.helloword.broadcast.BroadActivity2;
 import com.example.helloword.jump.AActivity;
 import com.example.helloword.fragment.*;
 
@@ -23,6 +25,8 @@ public class ControlActivity extends AppCompatActivity {
     private Button mBtnFragment;
     private Button mBtnEvent;
     private Button mBtnHandler;
+    private Button mBtnBroad;
+    private Button mBtnBroad2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -122,6 +126,24 @@ public class ControlActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(ControlActivity.this, HandlerActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        mBtnBroad = (Button) findViewById(R.id.btn_broadcast);
+        mBtnBroad.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ControlActivity.this, BroadActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        mBtnBroad2 = (Button) findViewById(R.id.btn_broadcast2);
+        mBtnBroad2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ControlActivity.this, BroadActivity2.class);
                 startActivity(intent);
             }
         });

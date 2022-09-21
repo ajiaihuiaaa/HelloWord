@@ -13,7 +13,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HelloWord">
         <activity
-            android:name=".broadcast.broadActivity2"
+            android:name=".ObjectAnimationMainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".broadcast.BroadActivity2"
             android:exported="false" />
         <activity
             android:name=".broadcast.BroadActivity"

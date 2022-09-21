@@ -1,14 +1,14 @@
-package com.example.helloword.broadcast;
+package com.example.helloword;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class broadActivity2 extends AppCompatActivity {
+public class ObjectAnimationMainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_broad2);
+        setContentView(R.layout.activity_object_animation_main);
     }
 }
