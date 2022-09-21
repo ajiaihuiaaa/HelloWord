@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
     private Button mBtnUi;
     private Button mBtnContorl;
     private Button mBtnData;
+    private Button mBtnAnimation;
 
 
     @Override
@@ -46,6 +47,15 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), DataStorageActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        mBtnAnimation = (Button) findViewById(R.id.btn_animation);
+        mBtnAnimation.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), ObjectAnimationMainActivity.class);
                 startActivity(intent);
             }
         });
