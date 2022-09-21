@@ -15,7 +15,14 @@
         android:id="@+id/btn_file"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="File"
+        android:text="InternalFile"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/btn_external_file"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ExternalFile"
         android:textAllCaps="false"/>
 
 </LinearLayout>

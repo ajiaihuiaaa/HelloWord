@@ -10,7 +10,7 @@ import android.widget.Button;
 import com.example.helloword.R;
 
 public class DataStorageActivity extends AppCompatActivity implements View.OnClickListener {
-    private Button mBtnSharedPreference, mBtnSaveFile;
+    private Button mBtnSharedPreference, mBtnInternalFile, mBtnExternalFile;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,8 +18,10 @@ public class DataStorageActivity extends AppCompatActivity implements View.OnCli
         setContentView(R.layout.activity_data_storage);
         mBtnSharedPreference = (Button) findViewById(R.id.btn_sharedpreferences);
         mBtnSharedPreference.setOnClickListener(this);
-        mBtnSaveFile = (Button) findViewById(R.id.btn_file);
-        mBtnSaveFile.setOnClickListener(this);
+        mBtnInternalFile = (Button) findViewById(R.id.btn_file);
+        mBtnInternalFile.setOnClickListener(this);
+        mBtnExternalFile = (Button) findViewById(R.id.btn_external_file);
+        mBtnExternalFile.setOnClickListener(this);
     }
 
     @Override
@@ -31,6 +33,9 @@ public class DataStorageActivity extends AppCompatActivity implements View.OnCli
                 break;
             case R.id.btn_file:
                 intent = new Intent(DataStorageActivity.this, InternalFileActivity.class);
+                break;
+            case R.id.btn_external_file:
+                intent = new Intent(DataStorageActivity.this, ExternalFileActivity.class);
                 break;
         }
         startActivity(intent);
